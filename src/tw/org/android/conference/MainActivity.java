@@ -4,13 +4,12 @@ import tw.org.android.conference.api.signin.ApiServiceDoneCallback;
 import tw.org.android.conference.api.signin.ParseSignInApiService;
 import tw.org.android.conference.api.signin.SignInApiService;
 import tw.org.android.conference.util.net.LogUtil;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 
 import com.parse.Parse;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
 	SignInApiService service = new ParseSignInApiService();
 	
@@ -18,6 +17,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		
+		
 		Parse.initialize(this, "ucHeW9Ypt5vq44nYAQS3udqFItycpTLrJqGhYDpQ", "Gw5OzRl94HE2sHlBIBCCACkgLIvPxbw9EJ8pvsLf");
 		
 		new Thread(new Runnable() {
