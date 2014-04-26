@@ -1,0 +1,6 @@
+1. Git Branch 不熟的人，建議使用 git flow，避免出錯。 
+2. 專案編碼請使用 UTF-8
+
+專案拉下來還須作的事情
+1. 專案拉下來後請執行 git submodule update --init 取得所有使用到的 library project
+2. 將 library project 進行 import 到 workspace 內。
