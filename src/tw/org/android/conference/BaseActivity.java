@@ -1,6 +1,7 @@
 package tw.org.android.conference;
 
 import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
 
 /**
  * All Activity should extends this BaseActivity
@@ -8,6 +9,6 @@ import android.app.Activity;
  * @author cateyeslin
  *
  */
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends FragmentActivity {
 	
 }
